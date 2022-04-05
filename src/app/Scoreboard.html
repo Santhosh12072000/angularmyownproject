@@ -1,0 +1,90 @@
+<html ng-app="cricketApp">
+
+<head>
+  <meta charset="UTF-8">
+  <title>A Pen by Arun-Htamilan</title>
+
+  <link rel="stylesheet" href="Scoreboard.css">
+
+</head>
+
+<body ng-controller="MainCtrl as main">
+
+  <div class="scoreboard">
+
+    <div class="titles">
+      <h1>ROYAL CHALLENGERS BANGALORE</h1>
+
+     <!-- <div>no</div>
+      <div>batting</div>
+      <div>bowling</div>
+      <div>runs</div>-->
+
+    </div>
+
+    <div class="content" ng-cloak>
+      <div>
+        <ul>
+          <li ng-repeat="i in [1,2,3,4]">No.</li>
+          <h2>1</h2>
+          <h2>2</h2>
+          <h2>3</h2>
+          <h2>4</h2>
+          <h2>5</h2>
+          <h2>6</h2>
+          
+          
+
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li ng-repeat="bat in main.battingList">BATSMAN</li>
+          <h2>Virat</h2>
+          <h2>Duplesis</h2>
+          <h2>Anuj</h2>
+         <h2>Dinesh</h2> 
+         <h2>Willey</h2>
+         <h2>RutherFord</h2>
+         <h1>TOTAL</h1>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li ng-repeat="bowl in main.bowlingList">bowled by </li>
+          <h2>Umesh</h2>
+          <h2>Umesh</h2>
+          <h2>Southee</h2>
+          <h2>not out</h2>
+          <h2>Narine</h2>
+          <h2>Southee</h2>
+          <h2></h2>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li ng-repeat="i in [10,20,30,40]">Runs scored</li>
+          <h2>12</h2>
+          <h2>5</h2>
+          <h2>0</h2>
+          <h2>14</h2>
+          <h2>18</h2>
+          <h2>28</h2>
+          <h1>132-7</h1>
+        </ul>
+        
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+  <script src="js/index.js"></script>-->
+  <!-- <script src="js/factory.js"></script> -->
+
+</body>
+
+</html>
